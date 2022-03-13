@@ -1,0 +1,122 @@
+$light: #fff;
+$dark: #000;
+$danger: red;
+$love: #00f;
+$repeat: #7F7C21;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  background: #1F2739;
+}
+.cente{
+  text-align: center;
+  a{
+    margin: 0 10px;
+    text-decoration: none;
+    background: none;
+    color: $love;
+    &:hover{
+      color: $dark;
+    }
+  }
+  h3{
+    text-align: right;
+    padding: 10px 0;
+    margin-right: 10px;
+    color: #25fad4;
+  }
+}
+h1{
+  color: greenyellow;
+  padding: 20px;
+  background:  $dark;
+  text-align: center;
+  display: inline-block;
+}
+h2{
+  padding: 0.9rem 0;
+  text-align: center;
+  margin-top: 1.1rem;
+  color: #4443d8;
+  background: chartreuse;
+}
+.container{
+  width: 1120px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background: red;
+}
+table{
+  width: 100%;
+  border-top: 3px dotted #adff2f;
+  .numb{
+    padding: 0 20px;
+  }
+  th{
+    color: indianred;
+    padding: 20px 10px;
+    background: yellow;
+    &:hover{
+      background: red;
+      color: $light;
+      font-weight: 600;
+    }
+    &.btn{
+      background: #473985;
+      padding: 0;
+    }
+  }
+  td{
+    padding: 10px 0;
+    padding-left: 20px;
+    background: #820abd;
+    color: $light;
+    overflow: hidden;
+    transition: .3s;
+    &:nth-child(1):hover{
+      background: red;
+    }
+    &:nth-child(2):hover{
+      background: green;
+    }
+    &:nth-child(3):hover{
+      background: $love;
+    }
+    &:hover {
+    background-color: orange;
+    box-shadow: #7F7C21 1px -1px, 
+    #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    transition: .4s all linear;
+    }
+  }
+  a{
+    color: lawngreen;
+    background: #0b2b46;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 1.2rem;
+    display: block;
+    transition: .5s all linear;
+    &:hover{
+      color: #0b2b46;
+      background: lawngreen;
+    }
+  }
+}
+footer{
+  text-align: center;
+  color: $light;
+  margin: 20px 0;
+  a{
+    color: $light;
+    text-decoration: none;
+    &:hover{
+      color: aqua;
+    }
+  }
+}
